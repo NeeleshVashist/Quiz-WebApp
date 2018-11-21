@@ -1,7 +1,7 @@
 # Quiz-WebApp
 Quiz WebApp made in Flask
 
-### To run this use this link : [Quiz-WebApp](https://quiz-python-webapp.herokuapp.com/) 
+### To test run this use this link : [Quiz-WebApp](https://quiz-python-webapp.herokuapp.com/) 
 ## Instructions to run :
 1. Install [Pycharm](https://www.jetbrains.com/pycharm/download/#section=windows)
 2. Install Flask
