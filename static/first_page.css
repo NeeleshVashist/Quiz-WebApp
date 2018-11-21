@@ -1,0 +1,61 @@
+#call_now {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.call_container {
+    background: rgba(37, 111, 180, 0.89);
+}
+
+#website_name {
+    padding-left: 0.4rem;
+}
+
+#accordionExample {
+    margin-top: 4rem;
+}
+
+#cards {
+    margin-top: 4rem;
+}
+
+#history {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+#margin_touch_box {
+    margin-top: 4rem;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+#get_in_touch {
+    font-size: 40px;
+    text-align: center;
+}
+
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+#btn_send:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+}
+
+.copyright_footer {
+    margin-top: 2rem;
+    background-color: #1E282D;
+}
+
+#copyright_text {
+    color: rgb(179, 179, 179);
+}
+
+#copyright_site {
+    color: rgb(235, 235, 235);
+}

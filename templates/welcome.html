@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LogIn</title>
+    <link type='text/css' rel='stylesheet' href="{{ url_for('static', filename='welcome.css') }}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id='container'>
+        <p class="head card-header">Welcome</p>
+        <div class="container">
+            <center>
+                <div class="row">
+                    <div class="col-sm-12 py-2">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 id="title" class="card-title">Quiz Game</h5>
+                                <p class="card-text">To play our Quiz Game, Please click the button below...</p>
+                                <a href="/quiz" class="btn btn-primary">Quiz Game</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 py-2">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 id="title" class="card-title">Demonstration Templates</h5>
+                                <p class="card-text">To see our Flask Demonstration Templates, Please click the button below...</p>
+                                <p class="card-text">Please, Note that templates here are just for Demonstration Purpose only...</p>
+                                <a href="/template" class="btn btn-primary">Templates</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+</body>
+</html>

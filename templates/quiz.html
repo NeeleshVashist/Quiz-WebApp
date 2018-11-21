@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Game</title>
+    <link type='text/css' rel='stylesheet' href="{{ url_for('static', filename='quiz.css') }}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+		<div id='container'>
+            <div class="head card-header">Quiz Game</div>
+            <div class="container">
+                <div class="card border-success mb-3">
+                    <div id="title" class="card-header">Welcome, User... Let's Play...</div>
+                    <div class="card-body text-success">
+                        <div id='quiz'></div>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">
+					<div id="logout" class='button btn btn-dark'><a href='/logout'>Logout</a></div>
+                        <div class='button btn btn-success' id='next'><a href='#'>Next</a></div>
+                		<div class='button btn btn-warning' id='prev'><a href='#'>Prev</a></div>
+                		<div class='button btn btn-danger' id='start'> <a href='#'>Start Over</a></div>
+                    </div>
+                </div>
+            </div>
+    	</div>
+
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+		<script type='text/javascript' src={{ url_for('static', filename='js/quiz.js') }}></script>
+	</body>
+</html>
