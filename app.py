@@ -1,9 +1,24 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
 import os
+import pymysql
+pymysql.install_as_MySQLdb()
+import MySQLdb
+#from flask_mysqldb import MySQL
+#import MySQLdb.cursors
+
+
 
 app = Flask(__name__)
 app.secret_key = 'some secret key'
 
+# MySQLdb.connect(host="localhost" ,user="<your_username>" ,passwd="<your_password>", db='<your_database>')
+db = MySQLdb.connect(host="localhost" ,user="root" ,passwd="root", db='grep')
+cursor = db.cursor()
+#cursor.execute("SELECT * FROM login")
+#numrows = cursor.rowcount
+
+#for x in range(0, numrows):
+#    row = cursor.fetchone()
 
 @app.route('/')
 def home():
@@ -15,7 +30,12 @@ def home():
 
 @app.route('/login', methods=['POST'])
 def do_admin_login():
-    if request.form['password'] == 'secret' and request.form['username'] == 'admin':
+    u=request.form['username']
+    querry="SELECT * FROM login where username='%s' " %(u,)
+    cursor.execute(querry)
+    row = cursor.fetchone()
+    #print(row)
+    if request.form['password'] == row[1]:
         session['logged_in'] = True
     else:
         flash('wrong password!')
